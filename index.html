@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Couture</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital@1&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-text">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav>
+            <div class="logo">Haute Couture</div>
+            <ul class="nav-links">
+                <li><a href="#collections" data-replace="Collections"><span>Collections</span></a></li>
+                <li><a href="#" data-replace="Runway"><span>Runway</span></a></li>
+                <li><a href="#" data-replace="About"><span>About</span></a></li>
+                <li><a href="#" data-replace="Testimonials"><span>Testimonials</span></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <div class="parallax-container">
+                <div class="carousel">
+                    <div class="carousel-item active" style="background-image: url('./img/hero1.jpg');" data-title="Haute Couture" data-subtitle="Elegance in Every Stitch"></div>
+                    <div class="carousel-item" style="background-image: url('./img/hero2.jpg');" data-title="Timeless Fashion" data-subtitle="Where Style Meets Sophistication"></div>
+                    <div class="carousel-item" style="background-image: url('./img/hero3.jpg');" data-title="Bespoke Creations" data-subtitle="Tailored to Perfection"></div>
+                </div>
+                <div class="parallax-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Haute Couture</h1>
+                <p>Elegance in Every Stitch</p>
+            </div>
+        </section>
+      
+        <section class="featured-collections" id="collections">
+            <div class="container">
+                <h2 class="section-title featured-title" data-text="Featured Collections"><span>Featured Collections</span></h2>
+                <div class="collections-grid">
+                    <div class="collection-item">
+                        <img src="./img/test1.jpg" alt="Ethereal Elegance Collection" class="collection-image">
+                        <div class="collection-info">
+                            <h3 class="collection-title">Ethereal Elegance</h3>
+                            <p class="collection-description">Delicate fabrics and flowing silhouettes inspired by the gentle movement of clouds.</p>
+                            <a href="#" class="collection-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="./img/6.jpg" alt="Noir Mystique Collection" class="collection-image">
+                        <div class="collection-info">
+                            <h3 class="collection-title">Noir Mystique</h3>
+                            <p class="collection-description">Bold, dramatic pieces that embody the allure of the night and the unknown.</p>
+                            <a href="#" class="collection-link">Discover</a>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="./img/test2.jpg" alt="Botanical Dreams Collection" class="collection-image">
+                        <div class="collection-info">
+                            <h3 class="collection-title">Botanical Dreams</h3>
+                            <p class="collection-description">Nature-inspired designs featuring intricate floral patterns and organic textures.</p>
+                            <a href="#" class="collection-link">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-parallax">
+            <div class="parallax-container">
+                <div class="parallax-bg"></div>
+            </div>
+            <div class="cta-content">
+                <h2>Elevate Your Style</h2>
+                <p>Join our exclusive fashion community and get access to limited edition collections.</p>
+                <a href="#" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <section class="fashion-fusion-gallery" id="fashion-fusion-gallery">
+            <div class="gallery-container">
+                <h2 class="section-title ">Fashion Fusion Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <img src="./img/New folder/fusion1.jpg" alt="Urban Elegance Collection">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Urban Elegance</h3>
+                            <p>A blend of street style and high fashion</p>
+                            <a href="#" class="item-link">Explore Collection</a>
+                        </div>
+                        <div class="item-tags">
+                            <span>Street</span>
+                            <span>Modern</span>
+                            <span>Chic</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <img src="./img/New folder/fusion2.jpg" alt="Bohemian Rhapsody Collection">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Bohemian Rhapsody</h3>
+                            <p>Free-spirited designs with a touch of vintage</p>
+                            <a href="#" class="item-link">Discover More</a>
+                        </div>
+                        <div class="item-tags">
+                            <span>Boho</span>
+                            <span>Vintage</span>
+                            <span>Eclectic</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <img src="./img/New folder/fusion3.jpg" alt="Minimalist Maven Collection">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Minimalist Maven</h3>
+                            <p>Clean lines and simple elegance for the modern professional</p>
+                            <a href="#" class="item-link">View Styles</a>
+                        </div>
+                        <div class="item-tags">
+                            <span>Minimalist</span>
+                            <span>Professional</span>
+                            <span>Sleek</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <img src="./img/New folder/fusion4.jpg" alt="Avant-Garde Allure Collection">
+                            <div class="item-overlay"></div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Avant-Garde Allure</h3>
+                            <p>Pushing boundaries with innovative designs and materials</p>
+                            <a href="#" class="item-link">Explore Avant-Garde</a>
+                        </div>
+                        <div class="item-tags">
+                            <span>Innovative</span>
+                            <span>Artistic</span>
+                            <span>Bold</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-overlay">
+                <div class="overlay-content">
+                    <h3></h3>
+                    <p></p>
+                    <button class="close-overlay">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-showcase" id="video-showcase">
+            <div class="container">
+                <h2 class="section-title">Crafting Excellence: Motion Stories</h2>
+                <div class="video-container">
+                    <div class="video-main">
+                        <div class="video-frame">
+                            <video id="main-video" class="main-video" loop muted playsinline>
+                                <source src="./video/video1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-pause-btn">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 id="video-title">The Art of Haute Couture</h3>
+                            <p id="video-description">Witness the meticulous craftsmanship behind our latest collection.</p>
+                        </div>
+                    </div>
+                    <div class="video-timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-items">
+                            <div class="timeline-item active" data-video="./video/video1.mp4" data-title="The Art of Haute Couture" data-description="Witness the meticulous craftsmanship behind our latest collection.">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <img src="./img/group.jpg" alt="Crafting Details">
+                                    <h4>Crafting Details</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-video="./video/video2.mp4" data-title="The Thread of Creation" data-description="Where creativity meets skill - the beginning of every masterpiece.">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <img src="./img/adsd.jpg" alt="Threading Artistry">
+                                    <h4>Threading Artistry</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-video="./video/video3.mp4" data-title="Hands of a Master" data-description="Decades of experience guide every movement, creating wearable art.">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <img src="./img/model sun glasse.jpg" alt="Meticulous Stitching">
+                                    <h4>Meticulous Stitching</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-video="./video/video4.mp4" data-title="Where Magic Happens" data-description="Step into our atelier, where dreams are woven into reality.">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <img src="./img/hero img 1.jpg" alt="Workshop Magic">
+                                    <h4>Workshop Magic</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title testimonials-title">Testimonials of Distinction</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial1.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="quote">"The Ethereal Elegance collection is absolutely stunning! I felt like a goddess wearing one of their gowns."</p>
+                            <p class="client-name">Sarah Johnson</p>
+                            <p class="client-title">Fashion Enthusiast</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial2.jpg" alt="Emily Chen">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="quote">"Noir Mystique is my go-to for evening wear. The pieces are bold, dramatic, and make a statement."</p>
+                            <p class="client-name">Emily Chen</p>
+                            <p class="client-title">Celebrity Stylist</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="./img/testimonial3.jpg" alt="David Rodriguez">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="quote">"I absolutely love the Botanical Dreams collection. Each piece feels like a work of art."</p>
+                            <p class="client-name">David Rodriguez</p>
+                            <p class="client-title">Fashion Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logo-scroll">
+            <div class="logo-scroll-container">
+                <div class="logo-scroll-track">
+                    <!-- Duplicate this div for a seamless loop -->
+                    <div class="logo-scroll-content">
+                        <img src="./img/Balenciaga-Logo.wine.png" alt="Brand 1">
+                        <img src="./img/Chanel-Logo.wine.png" alt="Brand 2">
+                        <img src="./img/Christian_Dior_(fashion_house)-Logo.wine.png" alt="Brand 3">
+                        <img src="./img/Hugo_Boss-Logo.wine.png" alt="Brand 4">
+                        <img src="./img/Louis_Vuitton-Logo.wine.png" alt="Brand 5">
+                        <img src="./img/Fendi-Logo.wine.png" alt="Brand 6">
+                        <!-- Add more logos as needed -->
+                    </div>
+                    <!-- Duplicate of the above div -->
+                    <div class="logo-scroll-content">
+                        <img src="./img/Balenciaga-Logo.wine.png" alt="Brand 1">
+                        <img src="./img/Chanel-Logo.wine.png" alt="Brand 2">
+                        <img src="./img/Christian_Dior_(fashion_house)-Logo.wine.png" alt="Brand 3">
+                        <img src="./img/Hugo_Boss-Logo.wine.png" alt="Brand 4">
+                        <img src="./img/Louis_Vuitton-Logo.wine.png" alt="Brand 5">
+                        <img src="./img/Fendi-Logo.wine.png" alt="Brand 6">
+                        <!-- Add more logos as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whats-new" id="whats-new">
+            <div class="container">
+                <h2 class="section-title">What's New</h2>
+                <div class="whats-new-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/model 2.png" alt="Relax Time Open Now">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Open Now: Relax Time</h3>
+                                    <p>Experience ultimate relaxation at our new massage & spa.</p>
+                                    <a href="#" class="whats-new-link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/model 1.png" alt="Jewellista Silom Complex">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Jewellista Silom Complex</h3>
+                                    <p>Discover exquisite jewelry at our newest boutique.</p>
+                                    <a href="#" class="whats-new-link">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/model 3.png" alt="Summer Bloom Market">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Summer Bloom Market</h3>
+                                    <p>Join us for a vibrant market experience with local artisans.</p>
+                                    <a href="#" class="whats-new-link">Visit Market</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/testimonial5.jpg" alt="Autumn Collection Preview">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Autumn Collection Preview</h3>
+                                    <p>Get a sneak peek at our cozy and stylish autumn designs.</p>
+                                    <a href="#" class="whats-new-link">Preview Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/model 5.jpg" alt="Sustainable Fashion Initiative">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Sustainable Fashion Initiative</h3>
+                                    <p>Discover our commitment to eco-friendly, ethical fashion.</p>
+                                    <a href="#" class="whats-new-link">Learn About Sustainability</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/6.jpg" alt="Fashion Week Highlights">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Paris Fashion Week Highlights</h3>
+                                    <p>Relive the best moments from our latest runway show in Paris.</p>
+                                    <a href="#" class="whats-new-link">Watch Highlights</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/44.jpg" alt="Designer Collaboration">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Exclusive Designer Collaboration</h3>
+                                    <p>Explore our limited edition collection with renowned designer Anna Lee.</p>
+                                    <a href="#" class="whats-new-link">Shop Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/testimonial6.jpg" alt="Fashion Tech Innovation">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Fashion Tech Innovation</h3>
+                                    <p>Introducing smart fabrics and wearable tech in our latest line.</p>
+                                    <a href="#" class="whats-new-link">Discover Innovation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/New folder/what1.jpg" alt="Vintage Pop-Up Store">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Vintage Pop-Up Store</h3>
+                                    <p>Step back in time with our curated collection of vintage pieces.</p>
+                                    <a href="#" class="whats-new-link">Find Pop-Up Locations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/New folder/what2.jpg" alt="Eco-Friendly Accessories">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Eco-Friendly Accessories Launch</h3>
+                                    <p>Elevate your style with our new line of sustainable accessories.</p>
+                                    <a href="#" class="whats-new-link">Shop Green</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/New folder/what3.jpg" alt="Fashion Workshop Series">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Fashion Workshop Series</h3>
+                                    <p>Join our expert-led workshops on style, design, and sustainability.</p>
+                                    <a href="#" class="whats-new-link">Register Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide whats-new-slide">
+                            <div class="whats-new-content">
+                                <div class="whats-new-image">
+                                    <img src="./img/New folder/what4.jpg" alt="Virtual Fashion Show">
+                                </div>
+                                <div class="whats-new-text">
+                                    <h3>Virtual Fashion Show Experience</h3>
+                                    <p>Immerse yourself in our groundbreaking virtual reality fashion show.</p>
+                                    <a href="#" class="whats-new-link">Get VR Access</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whats-new-nav"></div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="fashion-spotlight">
+            <div class="fashion-spotlight__container">
+                <h2 class="fashion-spotlight__title">Style Spotlight</h2>
+                <div class="fashion-spotlight__content">
+                    <div class="fashion-spotlight__grid">
+                        <div class="fashion-spotlight__item">
+                            <img src="./img/New folder/fusion1.jpg" alt="Denim Jacket">
+                            <div class="fashion-spotlight__info">
+                                <h3>Denim Jacket</h3>
+                                <p>$129.99</p>
+                            </div>
+                        </div>
+                        
+                        <div class="fashion-spotlight__item">
+                            <img src="./img/New folder/fusion2.jpg" alt="Sunglasses">
+                            <div class="fashion-spotlight__info">
+                                <h3>Retro Sunglasses</h3>
+                                <p>$59.99</p>
+                            </div>
+                        </div>
+                        <div class="fashion-spotlight__item">
+                            <img src="./img/New folder/fusion3.jpg" alt="Leather Belt">
+                            <div class="fashion-spotlight__info">
+                                <h3>Leather Belt</h3>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <div class="fashion-spotlight__item">
+                            <img src="./img/New folder/fusion4.jpg" alt="Bikini Set">
+                            <div class="fashion-spotlight__info">
+                                <h3>Bikini Set</h3>
+                                <p>$79.99</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="fashion-spotlight__video">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/video4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <h2 class="footer-logo">Haute Couture</h2>
+                    <p class="footer-tagline">Elegance Redefined</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Collections</h3>
+                        <ul>
+                            <li><a href="#">Spring/Summer</a></li>
+                            <li><a href="#">Autumn/Winter</a></li>
+                            <li><a href="#">Bridal</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Atelier</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Join Our World</h3>
+                    <p>Subscribe for exclusive previews and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="footer-info">
+                    <span>&copy; <span class="current-year">2023</span> Haute Couture. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
